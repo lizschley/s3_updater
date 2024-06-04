@@ -1,0 +1,25 @@
+To start, find default installation path
+
+1. --> python3 --v
+2. --> cd /Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python
+3. --> ls -la
+This tell you that Python is not a directory, in fact this is the wrong approach in general....
+just Mac stuff. Internet research to find default Mac installation.....
+4. --> cd /usr/local/bin
+5. --> ls p* -la
+6. --> python3.12 --version
+Works now!
+7. --> cd ~/development/s3_python
+8. --> /usr/local/bin/python3.12 -m venv py312_s3
+9. --> source py312_s3/bin/activate
+You can use . in place of source
+10. --> . py312_s3/bin/activate
+
+# Bill's alias
+alias py312a=". /mnt/c/uhome/bill/admin.d/env.d/py312a/bin/activate"
+
+This works for this specific virtual environment (in .zshrc)
+--> alias py312=". py312_s3/bin/activate"
+
+To activate virtual environment --> py312
+
